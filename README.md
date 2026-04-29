@@ -19,6 +19,14 @@ deep-learning CNN+MCTS — served through a FastAPI backend and a React frontend
 ### Launch
 
 Double-click **`start.bat`**, or run each piece manually:
+ Requirements
+   Docker Desktop
+  Run
+-git clone https://github.com/aymanfouad22/AIGoPlayer.git
+-cd AIGoPlayer
+-docker compose up --build
+
+OR
 
 ```bat
 :: Backend
