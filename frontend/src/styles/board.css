@@ -1,0 +1,38 @@
+.board-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.board-container svg {
+  display: block;
+  height: auto;
+  max-height: calc(100vh - 140px);
+  width: auto;
+  max-width: min(calc(100vh - 140px), 100%);
+}
+
+/* Stone entrance animation */
+@keyframes stone-pop {
+  0%   { transform: scale(0.2); opacity: 0; }
+  70%  { transform: scale(1.08); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.stone-enter {
+  animation: stone-pop 0.18s ease-out both;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+/* Thinking pulse on board */
+@keyframes pulse-ring {
+  0%   { opacity: 0.6; }
+  50%  { opacity: 0.2; }
+  100% { opacity: 0.6; }
+}
+
+.thinking-indicator {
+  animation: pulse-ring 1.2s ease-in-out infinite;
+}
