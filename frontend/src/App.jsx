@@ -1,11 +1,11 @@
-import { useReducer, useCallback, useEffect } from 'react'
-import Board from './components/Board'
-import GameInfo from './components/GameInfo'
+import { useCallback, useEffect, useReducer } from 'react'
 import AIAnalysis from './components/AIAnalysis'
-import MoveHistory from './components/MoveHistory'
+import Board from './components/Board'
 import Controls from './components/Controls'
-import ModelPicker from './components/ModelPicker'
+import GameInfo from './components/GameInfo'
 import GameOverModal from './components/GameOverModal'
+import ModelPicker from './components/ModelPicker'
+import MoveHistory from './components/MoveHistory'
 import { useGame } from './hooks/useGame'
 
 const EMPTY_BOARD = Array(9).fill(null).map(() => Array(9).fill(0))
@@ -30,16 +30,14 @@ const init = {
   winRateHistory: [],
   boardSnapshots: [{ board: EMPTY_BOARD, lastMove: null }],
   viewIdx: 0,
-  // Mode: who controls each color — 'human' | 'ai'
   blackPlayer: 'human',
   whitePlayer: 'ai',
-  aiType: 'classic',  // 'classic' | 'cnn'
+  aiType: 'classic',
   error: null,
 }
 
 function reducer(state, action) {
   switch (action.type) {
-
     case 'UPDATE': {
       const d = action.payload
       const winRateHistory =
@@ -70,7 +68,6 @@ function reducer(state, action) {
         error: null,
       }
     }
-
     case 'UNDO_UPDATE': {
       const d = action.payload
       const snapshots = state.boardSnapshots.slice(0, -1)
@@ -93,16 +90,15 @@ function reducer(state, action) {
         error: null,
       }
     }
-
-    case 'SET_VIEW_IDX':    return { ...state, viewIdx: action.payload }
-    case 'THINKING':        return { ...state, thinking: action.payload, error: null }
-    case 'ERROR':           return { ...state, thinking: false, error: action.payload }
-    case 'SET_TIME_LIMIT':  return { ...state, timeLimit: action.payload }
-    case 'SET_MODE':        return { ...state, blackPlayer: action.blackPlayer, whitePlayer: action.whitePlayer }
-    case 'SET_AI_TYPE':     return { ...state, aiType: action.payload }
-    case 'TOGGLE_OVERLAY':  return { ...state, overlays: { ...state.overlays, [action.payload]: !state.overlays[action.payload] } }
-    case 'RESET':           return { ...init, blackPlayer: state.blackPlayer, whitePlayer: state.whitePlayer, aiType: state.aiType, timeLimit: state.timeLimit }
-    default:                return state
+    case 'SET_VIEW_IDX': return { ...state, viewIdx: action.payload }
+    case 'THINKING': return { ...state, thinking: action.payload, error: null }
+    case 'ERROR': return { ...state, thinking: false, error: action.payload }
+    case 'SET_TIME_LIMIT': return { ...state, timeLimit: action.payload }
+    case 'SET_MODE': return { ...state, blackPlayer: action.blackPlayer, whitePlayer: action.whitePlayer }
+    case 'SET_AI_TYPE': return { ...state, aiType: action.payload }
+    case 'TOGGLE_OVERLAY': return { ...state, overlays: { ...state.overlays, [action.payload]: !state.overlays[action.payload] } }
+    case 'RESET': return { ...init, blackPlayer: state.blackPlayer, whitePlayer: state.whitePlayer, aiType: state.aiType, timeLimit: state.timeLimit }
+    default: return state
   }
 }
 
@@ -110,19 +106,9 @@ export default function App() {
   const [state, dispatch] = useReducer(reducer, init)
   const { newGame, playMove, playAIMove, forceAIMove, pass, undo } = useGame()
 
-  // Is the current player controlled by AI?
   const currentIsAI = state.currentPlayer === BLACK
     ? state.blackPlayer === 'ai'
     : state.whitePlayer === 'ai'
-
-  // ── AI auto-move trigger ────────────────────────────────────────────────────
-  // Fires whenever it becomes an AI player's turn (covers AI vs AI, and AI-first modes)
-  useEffect(() => {
-    if (state.gameOver || state.thinking || !currentIsAI) return
-    // Small delay so the board visually updates before AI starts thinking
-    const t = setTimeout(() => triggerAIMove(), 250)
-    return () => clearTimeout(t)
-  }, [state.currentPlayer, state.gameOver, state.thinking, currentIsAI])
 
   const triggerAIMove = useCallback(async () => {
     dispatch({ type: 'THINKING', payload: true })
@@ -134,18 +120,11 @@ export default function App() {
     }
   }, [state.timeLimit, state.aiType, playAIMove])
 
-  // ── Keyboard shortcuts ──────────────────────────────────────────────────────
   useEffect(() => {
-    const onKey = (e) => {
-      if (e.key === 'z' || e.key === 'Z') handleUndo()
-      if (e.key === 'ArrowLeft')  dispatch({ type: 'SET_VIEW_IDX', payload: Math.max(0, state.viewIdx - 1) })
-      if (e.key === 'ArrowRight') dispatch({ type: 'SET_VIEW_IDX', payload: Math.min(state.boardSnapshots.length - 1, state.viewIdx + 1) })
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [state.viewIdx, state.boardSnapshots.length])
-
-  // ── Handlers ────────────────────────────────────────────────────────────────
+    if (state.gameOver || state.thinking || !currentIsAI) return undefined
+    const t = setTimeout(() => triggerAIMove(), 250)
+    return () => clearTimeout(t)
+  }, [state.currentPlayer, state.gameOver, state.thinking, currentIsAI])
 
   const handleNewGame = useCallback(async () => {
     dispatch({ type: 'RESET' })
@@ -153,7 +132,6 @@ export default function App() {
     try {
       const data = await newGame()
       dispatch({ type: 'UPDATE', payload: data })
-      // If Black is AI, it will fire automatically via the useEffect above
     } catch (e) {
       dispatch({ type: 'ERROR', payload: e.message })
     }
@@ -162,9 +140,7 @@ export default function App() {
   useEffect(() => { handleNewGame() }, [])
 
   const handleMove = useCallback(async (row, col) => {
-    if (state.thinking || state.gameOver) return
-    if (currentIsAI) return  // block clicks on AI's turn
-    // Clicking while reviewing returns to live without playing
+    if (state.thinking || state.gameOver || currentIsAI) return
     if (state.viewIdx < state.boardSnapshots.length - 1) {
       dispatch({ type: 'SET_VIEW_IDX', payload: state.boardSnapshots.length - 1 })
       return
@@ -173,7 +149,6 @@ export default function App() {
     try {
       const data = await playMove(row, col)
       dispatch({ type: 'UPDATE', payload: data })
-      // AI responds automatically via useEffect
     } catch (e) {
       dispatch({ type: 'ERROR', payload: e.message })
     }
@@ -185,7 +160,6 @@ export default function App() {
     try {
       const data = await pass()
       dispatch({ type: 'UPDATE', payload: data })
-      // AI responds automatically via useEffect
     } catch (e) {
       dispatch({ type: 'ERROR', payload: e.message })
     }
@@ -215,21 +189,27 @@ export default function App() {
 
   const handleSetMode = useCallback((blackPlayer, whitePlayer) => {
     dispatch({ type: 'SET_MODE', blackPlayer, whitePlayer })
-    // Start a fresh game with the new mode
     setTimeout(() => handleNewGame(), 50)
   }, [handleNewGame])
 
-  // ── Display ─────────────────────────────────────────────────────────────────
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'z' || e.key === 'Z') handleUndo()
+      if (e.key === 'ArrowLeft') dispatch({ type: 'SET_VIEW_IDX', payload: Math.max(0, state.viewIdx - 1) })
+      if (e.key === 'ArrowRight') dispatch({ type: 'SET_VIEW_IDX', payload: Math.min(state.boardSnapshots.length - 1, state.viewIdx + 1) })
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [state.viewIdx, state.boardSnapshots.length, handleUndo])
+
   const isViewingHistory = state.viewIdx < state.boardSnapshots.length - 1
-  const displayedSnap    = state.boardSnapshots[state.viewIdx] || { board: state.board, lastMove: state.lastMove }
-  const displayedBoard   = isViewingHistory ? displayedSnap.board   : state.board
-  const displayedLast    = isViewingHistory ? displayedSnap.lastMove : state.lastMove
+  const displayedSnap = state.boardSnapshots[state.viewIdx] || { board: state.board, lastMove: state.lastMove }
+  const displayedBoard = isViewingHistory ? displayedSnap.board : state.board
+  const displayedLast = isViewingHistory ? displayedSnap.lastMove : state.lastMove
 
   return (
-    <div className="flex h-screen bg-coffee-900 text-cream-100 overflow-hidden" style={{ fontFamily: "'EB Garamond', Georgia, serif" }}>
-
-      {/* Left sidebar */}
-      <div className="w-60 flex-shrink-0 flex flex-col gap-3 p-4 bg-coffee-800 border-r border-coffee-600 overflow-y-auto">
+    <div className="app-shell">
+      <aside className="left-panel">
         <GameInfo
           currentPlayer={state.currentPlayer}
           moveNumber={state.moveNumber}
@@ -238,25 +218,14 @@ export default function App() {
           thinking={state.thinking}
         />
         {state.aiPassed && !state.gameOver && (
-          <div className="text-goldwood-300 text-sm bg-coffee-700 border border-coffee-500 px-3 py-2 rounded-lg">
-            AI passed — no beneficial moves found.
-          </div>
+          <div className="status-note">AI passed - no beneficial moves found.</div>
         )}
-      </div>
+      </aside>
 
-      {/* Board area */}
-      <div className="flex-1 flex flex-col items-center justify-center gap-3 p-4 overflow-y-auto min-h-0">
-
-        {state.error && (
-          <div className="text-red-300 text-sm bg-red-950/60 border border-red-900 px-3 py-2 rounded-lg w-full max-w-xl">
-            {state.error}
-          </div>
-        )}
-
+      <main className="center-area">
+        {state.error && <div className="error-note">{state.error}</div>}
         {isViewingHistory && (
-          <div className="text-cream-300 text-sm bg-coffee-700 border border-coffee-500 px-3 py-1.5 rounded-lg w-full max-w-xl text-center">
-            Reviewing move {state.viewIdx} / {state.boardSnapshots.length - 1} — click board or ▶▶ Live to return
-          </div>
+          <div className="review-note">Reviewing move {state.viewIdx} / {state.boardSnapshots.length - 1}</div>
         )}
 
         <Board
@@ -299,20 +268,15 @@ export default function App() {
           onHistoryLive={() => dispatch({ type: 'SET_VIEW_IDX', payload: state.boardSnapshots.length - 1 })}
         />
         <ModelPicker aiType={state.aiType} />
-      </div>
+      </main>
 
-      {/* Right sidebar */}
-      <div className="w-72 flex-shrink-0 flex flex-col gap-3 p-4 bg-coffee-800 border-l border-coffee-600 overflow-y-auto">
+      <aside className="right-panel">
         <AIAnalysis aiStats={state.aiStats} thinking={state.thinking} />
         <MoveHistory moveHistory={state.moveHistory} winRateHistory={state.winRateHistory} />
-      </div>
+      </aside>
 
       {state.gameOver && state.score && (
-        <GameOverModal
-          score={state.score}
-          moveHistory={state.moveHistory}
-          onNewGame={handleNewGame}
-        />
+        <GameOverModal score={state.score} moveHistory={state.moveHistory} onNewGame={handleNewGame} />
       )}
     </div>
   )

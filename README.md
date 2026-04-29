@@ -1,293 +1,258 @@
-```
-  ┌─────────────────────────────────────────┐
-  │  ⚫  9 × 9   G O   E N G I N E   ⚪  │
-  └─────────────────────────────────────────┘
-```
+# 9x9 Go Engine
 
-A playable 9×9 Go game powered by two AI engines — a classical C++ MCTS and a
-deep-learning CNN+MCTS — served through a FastAPI backend and a React frontend.
+A playable 9x9 Go game with a FastAPI backend, a React frontend, and two AI engines:
+
+- **Classic MCTS**: C++ Monte Carlo Tree Search engine exposed to Python.
+- **CNN + MCTS**: a trained neural-network policy/value model combined with MCTS.
+
+The easiest cross-platform way to run the project is Docker.
 
 ---
 
-## ┌── Getting Started ───────────────────────────────────────────────────────┐
+## Requirements
 
-### Prerequisites
-- **Python 3.14** — the compiled `.pyd` engine is built for CPython 3.14
-- **Node.js 18+** — for the frontend
-- **NVIDIA GPU + CUDA** — required for CNN mode; Classic runs on CPU only
+### Required for Docker
 
-### Launch
+- Docker Desktop
+- Docker Compose, included with modern Docker Desktop installs
+- About 4-6 GB of free disk space for Python, Node, PyTorch, and build layers
 
- Requirements
- 
-   Docker Desktop
-   
- Run
-  ```
+Docker is recommended for **Windows, macOS, and Linux** because it builds the C++ engine inside the container.
+
+### Required for local Windows development
+
+- Windows
+- Python matching the compiled extension if using the shipped `.pyd`
+- Node.js 18+
+- `npm`
+- Backend dependencies from `backend/requirements.txt`
+
+The shipped native backend includes:
+
+```text
+backend/go_engine.cp314-win_amd64.pyd
+```
+
+That file is a **Windows CPython extension**. It will not load natively on macOS.
+
+### macOS note
+
+On a Mac, do **not** use `start.bat`. Batch files are Windows-only.
+
+Use Docker instead:
+
+```bash
+docker compose up --build
+```
+
+If you want to run natively on macOS, you must rebuild the C++ engine for macOS and produce a compatible `.so` extension. The trained model file `backend/go_cnn_gpu.pth` is portable, but the compiled engine file is not.
+
+---
+
+## Run With Docker
+
+From the project root:
+
+```bash
 git clone https://github.com/aymanfouad22/AIGoPlayer.git
 cd AIGoPlayer
 docker compose up --build
 ```
-OR
-Double-click **`start.bat`**, or run each piece manually:
-```bat
-:: Backend
-cd backend
-<path-to-venv>\Scripts\uvicorn.exe server:app --host 0.0.0.0 --port 8000
 
-:: Frontend (separate terminal)
+Then open:
+
+```text
+http://localhost:3000
+```
+
+The frontend container serves the React app through nginx and proxies API calls to the backend container.
+
+Backend API:
+
+```text
+http://localhost:8000
+```
+
+Stop the app with:
+
+```bash
+docker compose down
+```
+
+### Docker AI notes
+
+The Docker backend builds the C++ engine for Linux and installs the CPU PyTorch wheel. Classic MCTS works normally. CNN mode can run, but without GPU acceleration it may be slower than on a CUDA Windows machine.
+
+---
+
+## Run on Windows With `start.bat`
+
+`start.bat` is only for Windows.
+
+Double-click:
+
+```text
+start.bat
+```
+
+Or run it from Command Prompt:
+
+```bat
+start.bat
+```
+
+It starts:
+
+- Backend on `http://localhost:8000`
+- Frontend on `http://localhost:3000`
+
+Important: the current `start.bat` contains a hard-coded virtual environment path. If that path does not exist on your machine, edit the file and replace it with your own `uvicorn.exe` path, or run the backend manually.
+
+---
+
+## Run Manually for Development
+
+### Backend
+
+From the project root:
+
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn server:app --host 0.0.0.0 --port 8000
+```
+
+On Windows, if `uvicorn` is inside a virtual environment:
+
+```bat
+cd backend
+.\.venv\Scripts\uvicorn.exe server:app --host 0.0.0.0 --port 8000
+```
+
+### Frontend
+
+In a second terminal:
+
+```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
-Open **http://localhost:3000**
+Open the Vite URL shown in the terminal, usually:
 
-## └──────────────────────────────────────────────────────────────────────────┘
+```text
+http://localhost:5173
+```
+
+For the production Docker/nginx setup, use:
+
+```text
+http://localhost:3000
+```
 
 ---
 
-## ┌── How to Play ───────────────────────────────────────────────────────────┐
+## How to Play
 
-```
-     A   B   C   D   E   F   G   H   J
-  9  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  8  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  7  ·   ·   ⚫  ·   ·   ·   ⚪  ·   ·
-  6  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  5  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  4  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  3  ·   ·   ⚪  ·   ·   ·   ⚫  ·   ·
-  2  ·   ·   ·   ·   ·   ·   ·   ·   ·
-  1  ·   ·   ·   ·   ·   ·   ·   ·   ·
-```
+- Click a legal board intersection to place a stone.
+- Use **New Game** to reset.
+- Use **Pass** to pass your turn.
+- Use **Undo** to take back a move.
+- Choose **Classic** or **CNN+MCTS** from the AI selector.
+- Choose AI think time with **1s**, **3s**, **5s**, or **10s**.
+- Toggle territory, legal moves, and AI move overlays from the control bar.
 
-| Action | How |
-|--------|-----|
-| Place a stone | Click any intersection |
-| Let AI play | Click **AI Move** |
-| Switch AI engine | Toggle **Classic** / **CNN** in the top bar |
-| Control think time | Click **1s / 3s / 5s / 10s** |
-| Pass | **Pass** button |
-| Take back | **Undo** button |
-| Reset | **New Game** button |
-
-Game ends after **two consecutive passes**. Territory and score are shown live.
-
-## └──────────────────────────────────────────────────────────────────────────┘
+The game ends after two consecutive passes. Score and territory are shown live.
 
 ---
 
-## ┌── Project Structure ─────────────────────────────────────────────────────┐
+## Project Structure
 
-```
+```text
 go_ship/
-├── start.bat
-├── backend/
-│   ├── server.py                      ← FastAPI — all HTTP endpoints
-│   ├── go_engine.cp314-win_amd64.pyd  ← Compiled C++ engine
-│   ├── go_cnn_gpu.pth                 ← Trained CNN weights (iter 30)
-│   ├── cnn_agent.py                   ← CNN inference wrapper
-│   ├── train_gpu_local.py             ← Network definition + input encoding
-│   ├── game.py / board.py / rules.py / score.py / ai.py
-│   └── requirements.txt
-├── cpp_engine/                        ← C++ source (rebuild the .pyd here)
-│   └── src/
-└── frontend/                          ← React + Vite + Tailwind
-    └── src/
+|-- docker-compose.yml
+|-- start.bat
+|-- backend/
+|   |-- server.py
+|   |-- ai.py
+|   |-- cnn_agent.py
+|   |-- train_gpu_local.py
+|   |-- go_engine.cp314-win_amd64.pyd
+|   |-- go_cnn_gpu.pth
+|   |-- board.py / game.py / rules.py / score.py
+|   `-- requirements.txt
+|-- cpp_engine/
+|   |-- CMakeLists.txt
+|   `-- src/
+`-- frontend/
+    |-- Dockerfile
+    |-- nginx.conf
+    |-- package.json
+    `-- src/
 ```
 
-### API Reference
+---
+
+## API Reference
 
 | Method | Endpoint | Body |
-|--------|----------|------|
-| POST | `/api/new-game` | — |
-| POST | `/api/move` | `{ row, col }` |
-| POST | `/api/ai-move` | `{ time_limit, ai_type }` |
-| POST | `/api/ai-move-force` | `{ time_limit, ai_type }` |
-| POST | `/api/pass` | — |
-| POST | `/api/undo` | — |
-| GET  | `/api/state` | — |
-| GET  | `/api/score` | — |
-| GET  | `/api/models` | — |
-| POST | `/api/load-model` | `{ path }` |
-
-## └──────────────────────────────────────────────────────────────────────────┘
+|---|---|---|
+| POST | `/api/new-game` | none |
+| POST | `/api/move` | `{ "row": 0, "col": 0 }` |
+| POST | `/api/ai-move` | `{ "time_limit": 5, "ai_type": "classic" }` |
+| POST | `/api/ai-move-force` | `{ "time_limit": 5, "ai_type": "cnn" }` |
+| POST | `/api/pass` | none |
+| POST | `/api/undo` | none |
+| GET | `/api/state` | none |
+| GET | `/api/score` | none |
+| GET | `/api/models` | none |
+| POST | `/api/load-model` | `{ "path": "go_cnn_gpu.pth" }` |
 
 ---
 
-## ┌── ⚫ Classic MCTS (C++ Engine) ──────────────────────────────────────────┐
+## AI Overview
 
-A fully self-contained C++ implementation compiled as a Python extension.
-The Python GIL is released for the entire search — Python overhead is zero.
+### Classic MCTS
 
-### Algorithm: Select → Expand → Rollout → Backpropagate
+The classic engine is a C++ Monte Carlo Tree Search implementation. It uses UCT/RAVE-style search, tactical move heuristics, rollout simulations, and backpropagation to choose moves.
 
-**Selection — UCT-RAVE**
+### CNN + MCTS
 
-Each node is scored using a blend of standard MCTS Q-value and RAVE (Rapid
-Action Value Estimation), a Fuego paper technique:
+The CNN engine uses a trained neural network to filter and evaluate promising moves, then MCTS searches those candidate moves. The shipped model is:
 
-```
-β  =  rave_n / (rave_n + n + rave_n·n / RAVE_EQUIV)
-
-score  =  (1 − β)·Q_mcts  +  β·Q_rave  +  C_UCT · P · √N / (1 + n)
+```text
+backend/go_cnn_gpu.pth
 ```
 
-- `RAVE_EQUIV = 3000` (Fuego tuning constant)
-- `C_UCT = 2.0`
-- `P` is a heuristic prior set at expansion time
-
-RAVE works by updating ancestor nodes with every move observed in the rollout,
-giving much better early estimates with few simulations.
-
-**Expansion — Heuristic Priors**
-
-At expansion, each child receives a prior `P` from hand-coded heuristics:
-
-- ⚫ Captures (taking opponent stones) — large bonus
-- 🛡 Saving own stones in atari (1 liberty left) — large bonus
-- Moves adjacent to existing stones preferred over isolated ones
-- Eye-filling moves penalized
-
-Scores are normalized and blended at 25% weight with a uniform prior.
-
-**Rollout — Smart Rollout**
-
-Random rollouts use urgency heuristics rather than pure random:
-
-1. An **atari mask** is precomputed once per step via heap-free BFS
-   (`get_atari_liberty_mark`), finding all capture / save moves in O(groups).
-2. If urgent moves exist, one is sampled from them.
-3. Otherwise a random non-eye legal move is chosen.
-4. ~95% of legality checks skip the board copy via an empty-neighbor fast path.
-
-**Backpropagation**
-
-Results propagate up the tree, flipping sign at each level. Both tree-path
-moves and all rollout moves update RAVE tables of every ancestor node.
-
-**Performance:** ~3,000 simulations/second · 5s → ~16,000 simulations/move
-
-## └──────────────────────────────────────────────────────────────────────────┘
+The network was trained through self-play. The first iteration learned from MCTS-generated games, then later iterations trained from recent self-play data.
 
 ---
 
-## ┌── ⚪ CNN + MCTS (Deep Learning Engine) ─────────────────────────────────┐
+## Troubleshooting
 
-The CNN engine replaces rollouts with a neural network that outputs a **policy**
-(move probabilities) and a **value** (win estimate). This is the AlphaZero
-approach — one network forward pass replaces thousands of random rollouts.
+### `start.bat` does not work on Mac
 
-### Network Architecture — GoNet
+That is expected. `.bat` files are Windows scripts. Use Docker on macOS:
 
-```
-  Input  10 × 9 × 9
-     │
-     ▼
-  Stem   Conv2d(10 → 192, 3×3, pad=1) → BatchNorm → ReLU
-     │
-     ▼
-  Tower  10 × ResBlock(192 filters)
-     │      each: Conv→BN→ReLU→Conv→BN + residual skip → ReLU
-     │
-     ├──── Policy Head
-     │       Conv2d(192→2, 1×1) → BN → ReLU → Flatten → Linear(162 → 81)
-     │       Output: logits over 81 cells  →  softmax  →  move probabilities
-     │
-     └──── Value Head
-             Conv2d(192→1, 1×1) → BN → ReLU → Flatten
-             → Linear(81→64) → ReLU → Linear(64→1) → Tanh
-             Output: scalar in [−1, +1]   (+1 = win, −1 = loss)
-
-  Parameters: 6,679,962
+```bash
+docker compose up --build
 ```
 
-### Input Planes — 10 Channels
+### Backend cannot import `go_engine`
 
-| # | Plane |
-|---|-------|
-| 0 | ⚫ Current player's stones |
-| 1 | ⚪ Opponent's stones |
-| 2 | All ones (global bias) |
-| 3 | Fill ratio — stone count / 81, broadcast to 9×9 |
-| 4 | ⚫ Own stones with exactly 1 liberty (in atari — critical!) |
-| 5 | ⚫ Own stones with exactly 2 liberties |
-| 6 | ⚫ Own stones with 3+ liberties |
-| 7 | ⚪ Opponent stones with exactly 1 liberty (can be captured) |
-| 8 | ⚪ Opponent stones with exactly 2 liberties |
-| 9 | ⚪ Opponent stones with 3+ liberties |
+You are probably trying to run the Windows `.pyd` on the wrong Python version or operating system. Use Docker, or rebuild the C++ engine for your platform.
 
-Liberty planes give the network direct visibility into tactical threats — atari
-captures and escapes — without having to infer them from raw stone positions.
+### Frontend opens but API calls fail
 
-### Search — PUCT
+Make sure the backend is running on:
 
-```
-score(child)  =  Q(child)  +  C_PUCT · P(child) · √N_parent / (1 + N_child)
+```text
+http://localhost:8000
 ```
 
-`P(child)` is the network's policy output for that move. The value head
-replaces rollouts entirely — the network evaluates leaves directly.
+If using Docker, make sure both containers are up:
 
-### Opening Book
-
-Fixed joseki for the first moves avoid wasting search budget on positions where
-theory is already well-established.
-
-### Training — AlphaZero Self-Play
-
+```bash
+docker compose ps
 ```
-  ┌──────────────────────────────────────────┐
-  │  Current network                         │
-  │       ↓                                  │
-  │  Self-play games  (MCTS-guided moves)    │
-  │       ↓                                  │
-  │  Store: (planes, visit_dist, outcome)    │
-  │       ↓                                  │
-  │  Train on:                               │
-  │    policy loss — KL(predicted, MCTS)     │
-  │    value  loss — MSE(predicted, outcome) │
-  │       ↓                                  │
-  │  Updated network  →  repeat              │
-  └──────────────────────────────────────────┘
-```
-
-The shipped model (`go_cnn_gpu.pth`) is **iteration 30** of this loop.
-
-### Strength
-
-In a 100-game evaluation:
-
-```
-  CNN+MCTS  200 sims   vs   Classic MCTS  400 sims
-  ─────────────────────────────────────────────────
-  Game 1   ⚫ CNN   79 – 4  ⚪ Classic    CNN WIN
-  Game 2   ⚪ CNN    0 – 84 ⚫ Classic    CNN WIN
-  Game 3   ⚫ CNN   81 – 2  ⚪ Classic    CNN WIN
-  ...
-  Result: CNN wins 100 / 100  (complete sweep)
-```
-
-CNN at **200 sims** dominated Classic at **400 sims** by massive margins.
-The value network's positional understanding makes rollout-based search
-obsolete at any equal time budget.
-
-## └──────────────────────────────────────────────────────────────────────────┘
-
----
-
-## ┌── Configuration ─────────────────────────────────────────────────────────┐
-
-All tunable constants live in `backend/server.py`:
-
-| Constant | Default | Effect |
-|----------|---------|--------|
-| `CNN_BATCH` | 50 | GPU forward passes per batch |
-| `CLASSIC_BATCH` | 200 | C++ simulations per time-check batch |
-| `CLASSIC_SIMS_MIN` | 200 | Minimum sims regardless of time limit |
-
-Frontend time buttons (1s / 3s / 5s / 10s) set wall-clock think time for
-both engines. CNN runs ~200 sims/s; Classic runs ~3,000 sims/s.
-
-## └──────────────────────────────────────────────────────────────────────────┘

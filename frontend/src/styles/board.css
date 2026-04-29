@@ -3,30 +3,35 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  max-width: min(72vh, 720px);
+  aspect-ratio: 1;
+  border-radius: 8px;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.32),
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .board-container svg {
   display: block;
+  width: 100%;
   height: auto;
-  max-height: calc(100vh - 140px);
-  width: auto;
-  max-width: min(calc(100vh - 140px), 100%);
+  aspect-ratio: 1;
+  border-radius: 8px;
 }
 
-/* Stone entrance animation */
-@keyframes stone-pop {
-  0%   { transform: scale(0.2); opacity: 0; }
-  70%  { transform: scale(1.08); }
+@keyframes place-stone {
+  0%   { transform: scale(0); opacity: 0; }
+  60%  { transform: scale(1.1); }
   100% { transform: scale(1); opacity: 1; }
 }
 
 .stone-enter {
-  animation: stone-pop 0.18s ease-out both;
+  animation: place-stone 150ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
   transform-box: fill-box;
   transform-origin: center;
 }
 
-/* Thinking pulse on board */
 @keyframes pulse-ring {
   0%   { opacity: 0.6; }
   50%  { opacity: 0.2; }
@@ -35,4 +40,23 @@
 
 .thinking-indicator {
   animation: pulse-ring 1.2s ease-in-out infinite;
+}
+
+.last-move-marker {
+  animation: pulse-ring 2s ease-in-out infinite;
+}
+
+.overlay-fade {
+  animation: overlay-fade 200ms ease both;
+}
+
+@keyframes overlay-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 767px) {
+  .board-container {
+    max-width: calc(100vw - 24px);
+  }
 }
