@@ -18,7 +18,6 @@ deep-learning CNN+MCTS — served through a FastAPI backend and a React frontend
 
 ### Launch
 
-Double-click **`start.bat`**, or run each piece manually:
  Requirements
    Docker Desktop
   Run
@@ -27,7 +26,7 @@ Double-click **`start.bat`**, or run each piece manually:
 -docker compose up --build
 
 OR
-
+Double-click **`start.bat`**, or run each piece manually:
 ```bat
 :: Backend
 cd backend
