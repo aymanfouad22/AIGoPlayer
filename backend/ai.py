@@ -1,3 +1,37 @@
+# AI strategy and testing notes
+#
+# My AI combines two ideas: a convolutional neural network (CNN) and Monte
+# Carlo Tree Search (MCTS). The CNN is used as a policy filter: given the
+# current 9x9 board position, it predicts which legal moves are likely to be
+# good candidates. MCTS then searches among those candidates by running many
+# simulated continuations and choosing the move with the strongest search
+# result. I chose this hybrid strategy because it follows the same general
+# direction that made AlphaGo successful: a neural network gives the search
+# useful guidance, while tree search prevents the move choice from depending
+# only on a single static evaluation.
+#
+# A major design decision was to keep hand-written Go knowledge in the engine
+# instead of relying only on the CNN. The code still scores urgent tactical
+# moves such as captures, saving groups in atari, connecting to friendly
+# stones, avoiding obvious eye-filling, and avoiding moves deep inside settled
+# opponent territory. I also used RAVE-style rollout information so that moves
+# appearing in successful simulations can become more attractive earlier in
+# the search. This helped make the MCTS less random and more useful before the
+# CNN had learned enough from self-play.
+#
+# The CNN was trained through self-play. The first training iteration learned
+# from MCTS-generated games directly, using about 500 games as the starting
+# data. After that, I trained for 30 iterations total and used a replay window
+# from the last 4 iterations so the model could keep learning from recent
+# stronger versions of itself without forgetting too much useful older play.
+# One challenge was balancing speed and strength: deeper MCTS gives better
+# decisions, but the web app still needs the AI to return a move quickly, so
+# the code mixes fast heuristics, a learned policy, and bounded simulations.
+#
+# Beyond the provided tests, I tested the AI by playing it against a classic
+# MCTS baseline using about 6000 simulations per move. I also tested it against
+# GNU Go to check that it made reasonable strategic and tactical choices
+# against an established Go engine, not just against my own implementation.
 import math
 import random
 import time
