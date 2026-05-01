@@ -16,13 +16,13 @@ from board import BLACK, WHITE
 import cnn_agent
 import go_engine
 
-CNN_BATCH            = 50    # sims per CNN batch (GPU stays busy, loop checks deadline)
-CLASSIC_BATCH        = 200   # sims per batch for time-limited classic search
-CLASSIC_SIMS_MIN     = 200   # always do at least this many
+LEAF_BATCH           = 32    # leaves per GPU forward pass (batched virtual-loss MCTS)
+CLASSIC_BATCH        = 400   # sims per batch for time-limited classic search
+CLASSIC_SIMS_MIN     = 400   # always do at least this many
 
 # Pre-allocate C++ trees — reused across all requests
-_classic_mcts = go_engine.ClassicMCTS(max_nodes=82000)
-_cnn_pmcts    = go_engine.ParallelMCTS(1, 5000)   # cap ~300k nodes; enough for 10s @ ~50 sims/s
+_classic_mcts = go_engine.ClassicMCTS(max_nodes=200000)
+_cnn_pmcts    = go_engine.ParallelMCTS(1, 20000)  # larger node pool for high sim counts
 
 def _cnn_ai_move(game, time_limit=5.0):
     import go_engine
@@ -54,26 +54,29 @@ def _cnn_ai_move(game, time_limit=5.0):
 
     _cnn_pmcts.reset(board_np, player_np, hashes_np)
 
-    deadline  = time.time() + time_limit
+    deadline   = time.time() + time_limit
     total_sims = 0
-    first_batch = True
+    first_step = True
 
     while True:
-        for sim_idx in range(CNN_BATCH):
-            raw_b, raw_p = _cnn_pmcts.get_leaves()
-            bt = torch.from_numpy(raw_b).to(device)
-            pt = torch.from_numpy(raw_p).to(device)
-            with torch.no_grad(), torch.autocast('cuda', dtype=torch.float16,
-                                                  enabled=(device.type == 'cuda')):
-                pol_logits, val = cnn(T.to_planes_mixed(bt, pt))
-                pol = F.softmax(pol_logits.float(), dim=1).cpu().numpy().astype(np.float32)
-                val = val.squeeze(1).float().cpu().numpy().astype(np.float32)
-            if first_batch and sim_idx == 0:
-                blended = (1.0 - cnn_agent.BLEND) * pol[0] + cnn_agent.BLEND * h_prior
-                pol[0]  = blended / (blended.sum() + 1e-8)
-            _cnn_pmcts.apply_results(pol, val)
-        total_sims += CNN_BATCH
-        first_batch = False
+        # Collect LEAF_BATCH leaves with virtual losses (different paths per leaf)
+        raw_b, raw_p = _cnn_pmcts.gather_leaves_batch(LEAF_BATCH)
+
+        bt = torch.from_numpy(raw_b).to(device)
+        pt = torch.from_numpy(raw_p).to(device)
+        with torch.no_grad(), torch.autocast('cuda', dtype=torch.float16,
+                                              enabled=(device.type == 'cuda')):
+            pol_logits, val = cnn(T.to_planes_mixed(bt, pt))
+            pol = F.softmax(pol_logits.float(), dim=1).cpu().numpy().astype(np.float32)
+            val = val.squeeze(1).float().cpu().numpy().astype(np.float32)
+
+        if first_step:
+            blended = (1.0 - cnn_agent.BLEND) * pol[0] + cnn_agent.BLEND * h_prior
+            pol[0]  = blended / (blended.sum() + 1e-8)
+            first_step = False
+
+        _cnn_pmcts.scatter_results_batch(pol, val)
+        total_sims += LEAF_BATCH
         if time.time() >= deadline:
             break
 

@@ -172,6 +172,23 @@ PYBIND11_MODULE(go_engine, m) {
         },
         py::arg("policy"), py::arg("value"))
 
+        // gather_leaves_batch(max_n) -> (max_n,9,9) int8, (max_n,) int8
+        .def("gather_leaves_batch", [](ParallelMCTS& self, int max_n) {
+            auto boards_out  = py::array_t<int8_t>({max_n, BOARD_SIZE, BOARD_SIZE});
+            auto players_out = py::array_t<int8_t>({max_n});
+            self.gather_leaves_batch(max_n, boards_out.mutable_data(), players_out.mutable_data());
+            return py::make_tuple(boards_out, players_out);
+        }, py::arg("max_n"))
+
+        // scatter_results_batch(policy (N,81) float32, value (N,) float32)
+        .def("scatter_results_batch", [](ParallelMCTS& self,
+                                          py::array_t<float, py::array::c_style> policy_np,
+                                          py::array_t<float, py::array::c_style> value_np)
+        {
+            int n = (int)policy_np.shape(0);
+            self.scatter_results_batch(n, policy_np.data(), value_np.data());
+        }, py::arg("policy"), py::arg("value"))
+
         // get_best_moves() -> (G,) int32
         .def("get_best_moves", [](const ParallelMCTS& self) {
             auto out = py::array_t<int>({self.G});

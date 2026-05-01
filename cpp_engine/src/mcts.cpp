@@ -79,6 +79,7 @@ void MCTSTree::init(int max_nodes_) {
 
 void MCTSTree::reset(const Board& board, int8_t player, uint64_t prev_hash) {
     n_used = 0;
+    pending_leaves_.clear();
     int root_idx = alloc();
     MCTSNode& r  = nodes[root_idx];
     std::fill(r.children, r.children + TOTAL_CELLS, -1);
@@ -88,6 +89,7 @@ void MCTSTree::reset(const Board& board, int8_t player, uint64_t prev_hash) {
     r.q          = 0.0f;
     r.p          = 1.0f;
     r.n          = 0;
+    r.vl         = 0;
     r.parent     = -1;
     r.move_idx   = -1;
     r.expanded   = false;
@@ -103,13 +105,19 @@ float MCTSTree::puct(int parent_idx, int child_idx) const {
     const MCTSNode& par = nodes[parent_idx];
     const MCTSNode& ch  = nodes[child_idx];
     float q_val = (ch.n > 0) ? -ch.q : 0.0f;
-    return q_val + C_PUCT * ch.p * std::sqrtf((float)par.n) / (1.0f + ch.n);
+    return q_val + C_PUCT * ch.p * std::sqrt((float)par.n) / (1.0f + ch.n);
 }
 
 int MCTSTree::select() {
     int cur = 0;
     while (nodes[cur].expanded && nodes[cur].n_children > 0) {
-        const MCTSNode& nd = nodes[cur];
+        // Apply virtual loss before choosing child
+        MCTSNode& nd = nodes[cur];
+        float old_sum = nd.q * (float)nd.n - 1.0f;
+        nd.n++;
+        nd.vl++;
+        nd.q = old_sum / (float)nd.n;
+
         float best_score = -1e30f;
         int   best_child = -1;
         for (int idx = 0; idx < TOTAL_CELLS; ++idx) {
@@ -121,12 +129,18 @@ int MCTSTree::select() {
         if (best_child < 0) break;
         cur = best_child;
     }
+    // Apply virtual loss to leaf
+    MCTSNode& leaf = nodes[cur];
+    float old_sum = leaf.q * (float)leaf.n - 1.0f;
+    leaf.n++;
+    leaf.vl++;
+    leaf.q = (leaf.n > 0) ? old_sum / (float)leaf.n : -1.0f;
     return cur;
 }
 
 void MCTSTree::expand(int node_idx, const float* policy81, float value) {
     MCTSNode& nd = nodes[node_idx];
-    nd.expanded  = true;
+    if (!nd.expanded) nd.expanded = true;
 
     int8_t   player    = nd.player;
     int8_t   opp       = (int8_t)(3 - player);
@@ -175,6 +189,7 @@ void MCTSTree::expand(int node_idx, const float* policy81, float value) {
         child.q          = 0.0f;
         child.p          = blended;
         child.n          = 0;
+        child.vl         = 0;
         child.parent     = node_idx;
         child.move_idx   = idx;
         child.expanded   = false;
@@ -194,6 +209,13 @@ void MCTSTree::backprop(int node_idx, float value) {
     int   cur = node_idx;
     while (cur >= 0) {
         MCTSNode& nd = nodes[cur];
+        // Undo one virtual loss (-1 was added during select)
+        if (nd.vl > 0) {
+            float real_sum = nd.q * (float)nd.n + 1.0f;
+            nd.n--;
+            nd.vl--;
+            nd.q = (nd.n > 0) ? real_sum / (float)nd.n : 0.0f;
+        }
         nd.n++;
         nd.q += (v - nd.q) / (float)nd.n;
         v    = -v;
@@ -228,6 +250,25 @@ void MCTSTree::visit_probs(float* out81) const {
         int ci = root.children[idx];
         if (ci >= 0) out81[idx] = nodes[ci].n * scale;
     }
+}
+
+int MCTSTree::gather_leaves(int max_n, int8_t* boards_out, int8_t* players_out) {
+    pending_leaves_.clear();
+    pending_leaves_.reserve(max_n);
+    for (int i = 0; i < max_n; ++i) {
+        int leaf = select();
+        pending_leaves_.push_back(leaf);
+        const MCTSNode& nd = nodes[leaf];
+        std::memcpy(boards_out + i * TOTAL_CELLS, nd.board.cells.data(), TOTAL_CELLS);
+        players_out[i] = nd.player;
+    }
+    return (int)pending_leaves_.size();
+}
+
+void MCTSTree::scatter_results(int n, const float* policies, const float* values) {
+    for (int i = 0; i < n; ++i)
+        expand(pending_leaves_[i], policies + i * TOTAL_CELLS, values[i]);
+    pending_leaves_.clear();
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -291,7 +332,7 @@ float ClassicMCTS::uct_rave(int parent_idx, int child_idx) const {
 
     // PUCT-style exploration with heuristic prior
     float explore = (par.n > 0)
-        ? C_UCT * ch.p * std::sqrtf((float)par.n) / (1.0f + (float)ch.n)
+        ? C_UCT * ch.p * std::sqrt((float)par.n) / (1.0f + (float)ch.n)
         : 0.0f;
 
     return q_combined + explore;
@@ -580,4 +621,12 @@ void ParallelMCTS::get_best_moves(int* out) const {
 void ParallelMCTS::get_visit_probs(float* out) const {
     for (int g = 0; g < G; ++g)
         trees[g].visit_probs(out + g * TOTAL_CELLS);
+}
+
+void ParallelMCTS::gather_leaves_batch(int max_n, int8_t* boards_out, int8_t* players_out) {
+    trees[0].gather_leaves(max_n, boards_out, players_out);
+}
+
+void ParallelMCTS::scatter_results_batch(int n, const float* policies, const float* values) {
+    trees[0].scatter_results(n, policies, values);
 }

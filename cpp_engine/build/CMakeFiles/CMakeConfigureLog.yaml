@@ -1,0 +1,3369 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild version 18.5.4+cb4e32d21 for .NET Framework
+      Build started 4/30/2026 1:52:40 PM.
+      
+      Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      PrepareForBuild:
+        Creating directory "Debug\\".
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Creating directory "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Creating "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+        Touching "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Done Building Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\4.3.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      
+      Build succeeded.
+          0 Warning(s)
+          0 Error(s)
+      
+      Time Elapsed 00:00:00.80
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/4.3.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/lld-link.com"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/lld-link.exe"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/lld-link"
+      - "C:/ProgramData/mingw64/mingw64/bin/lld-link.com"
+      - "C:/ProgramData/mingw64/mingw64/bin/lld-link.exe"
+      - "C:/ProgramData/mingw64/mingw64/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/lld-link"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.com"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Program Files/Google/Chrome/Application/lld-link.com"
+      - "C:/Program Files/Google/Chrome/Application/lld-link.exe"
+      - "C:/Program Files/Google/Chrome/Application/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/PowerToys/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/PowerToys/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/PowerToys/lld-link"
+      - "C:/Users/ayman/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/ayman/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/ayman/AppData/Roaming/npm/lld-link"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/lld-link"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/lld-link.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/lld-link.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/mt.com"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/mt.com"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/mt.exe"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/mt"
+      - "C:/ProgramData/mingw64/mingw64/bin/mt.com"
+      - "C:/ProgramData/mingw64/mingw64/bin/mt.exe"
+      - "C:/ProgramData/mingw64/mingw64/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/mt"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.com"
+      - "C:/Program Files/PostgreSQL/18/bin/mt.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Program Files/Google/Chrome/Application/mt.com"
+      - "C:/Program Files/Google/Chrome/Application/mt.exe"
+      - "C:/Program Files/Google/Chrome/Application/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/mt"
+      - "C:/Users/ayman/AppData/Local/PowerToys/mt.com"
+      - "C:/Users/ayman/AppData/Local/PowerToys/mt.exe"
+      - "C:/Users/ayman/AppData/Local/PowerToys/mt"
+      - "C:/Users/ayman/AppData/Roaming/npm/mt.com"
+      - "C:/Users/ayman/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/ayman/AppData/Roaming/npm/mt"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/mt.com"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/mt.exe"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Python/bin/mt.com"
+      - "C:/Users/ayman/AppData/Local/Python/bin/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Python/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/mt.com"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/mt"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/mt.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/mt.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:592 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC.cmake:565 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/go_engine/bin/"
+      - "C:/Program Files (x86)/go_engine/sbin/"
+      - "C:/Program Files (x86)/go_engine/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/rc.com"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/rc.com"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/rc.exe"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/rc"
+      - "C:/ProgramData/mingw64/mingw64/bin/rc.com"
+      - "C:/ProgramData/mingw64/mingw64/bin/rc.exe"
+      - "C:/ProgramData/mingw64/mingw64/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/rc"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.com"
+      - "C:/Program Files/PostgreSQL/18/bin/rc.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Program Files/Google/Chrome/Application/rc.com"
+      - "C:/Program Files/Google/Chrome/Application/rc.exe"
+      - "C:/Program Files/Google/Chrome/Application/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/rc"
+      - "C:/Users/ayman/AppData/Local/PowerToys/rc.com"
+      - "C:/Users/ayman/AppData/Local/PowerToys/rc.exe"
+      - "C:/Users/ayman/AppData/Local/PowerToys/rc"
+      - "C:/Users/ayman/AppData/Roaming/npm/rc.com"
+      - "C:/Users/ayman/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/ayman/AppData/Roaming/npm/rc"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/rc.com"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/rc.exe"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Python/bin/rc.com"
+      - "C:/Users/ayman/AppData/Local/Python/bin/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Python/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/rc.com"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/rc"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/rc.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/rc.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/go_engine/bin/rc.com"
+      - "C:/Program Files (x86)/go_engine/bin/rc.exe"
+      - "C:/Program Files (x86)/go_engine/bin/rc"
+      - "C:/Program Files (x86)/go_engine/sbin/rc.com"
+      - "C:/Program Files (x86)/go_engine/sbin/rc.exe"
+      - "C:/Program Files (x86)/go_engine/sbin/rc"
+      - "C:/Program Files (x86)/go_engine/rc.com"
+      - "C:/Program Files (x86)/go_engine/rc.exe"
+      - "C:/Program Files (x86)/go_engine/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/go_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/go_engine"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-fwrgl3"
+      binary: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-fwrgl3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-fwrgl3'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c7792.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.5.4+cb4e32d21 for .NET Framework
+        Build started 4/30/2026 1:52:42 PM.
+        
+        Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fwrgl3\\cmTC_c7792.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fwrgl3\\Debug\\".
+          Creating directory "cmTC_c7792.dir\\Debug\\cmTC_c7792.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_c7792.dir\\Debug\\cmTC_c7792.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c7792.dir\\Debug\\cmTC_c7792.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_c7792.dir\\Debug\\\\" /Fd"cmTC_c7792.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_c7792.dir\\Debug\\\\" /Fd"cmTC_c7792.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.3\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fwrgl3\\Debug\\cmTC_c7792.exe" /INCREMENTAL /ILK:"cmTC_c7792.dir\\Debug\\cmTC_c7792.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-fwrgl3/Debug/cmTC_c7792.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-fwrgl3/Debug/cmTC_c7792.lib" /MACHINE:X64  /machine:x64 cmTC_c7792.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_c7792.vcxproj -> C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fwrgl3\\Debug\\cmTC_c7792.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_c7792.dir\\Debug\\cmTC_c7792.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c7792.dir\\Debug\\cmTC_c7792.tlog\\cmTC_c7792.lastbuildstate".
+        Done Building Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fwrgl3\\cmTC_c7792.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.39
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.50.35729.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:333 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:640 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-qd8789"
+      binary: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-qd8789"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-qd8789'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e24b9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.5.4+cb4e32d21 for .NET Framework
+        Build started 4/30/2026 1:52:42 PM.
+        
+        Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\cmTC_e24b9.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\Debug\\".
+          Creating directory "cmTC_e24b9.dir\\Debug\\cmTC_e24b9.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_e24b9.dir\\Debug\\cmTC_e24b9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_e24b9.dir\\Debug\\cmTC_e24b9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++17 /Fo"cmTC_e24b9.dir\\Debug\\\\" /Fd"cmTC_e24b9.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\OpenMPTryFlag.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++17 /Fo"cmTC_e24b9.dir\\Debug\\\\" /Fd"cmTC_e24b9.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\OpenMPTryFlag.cpp"
+          OpenMPTryFlag.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\Debug\\cmTC_e24b9.exe" /INCREMENTAL /ILK:"cmTC_e24b9.dir\\Debug\\cmTC_e24b9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-qd8789/Debug/cmTC_e24b9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-qd8789/Debug/cmTC_e24b9.lib" /MACHINE:X64  /machine:x64 cmTC_e24b9.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_e24b9.vcxproj -> C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\Debug\\cmTC_e24b9.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_e24b9.dir\\Debug\\cmTC_e24b9.tlog\\unsuccessfulbuild".
+          Touching "cmTC_e24b9.dir\\Debug\\cmTC_e24b9.tlog\\cmTC_e24b9.lastbuildstate".
+        Done Building Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qd8789\\cmTC_e24b9.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:574 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindOpenMP.cmake:714 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:13 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-u8ayal"
+      binary: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-u8ayal"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-u8ayal'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_21694.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.5.4+cb4e32d21 for .NET Framework
+        Build started 4/30/2026 1:52:43 PM.
+        
+        Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\cmTC_21694.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\Debug\\".
+          Creating directory "cmTC_21694.dir\\Debug\\cmTC_21694.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_21694.dir\\Debug\\cmTC_21694.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_21694.dir\\Debug\\cmTC_21694.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++17 /Fo"cmTC_21694.dir\\Debug\\\\" /Fd"cmTC_21694.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\OpenMPCheckVersion.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /openmp /std:c++17 /Fo"cmTC_21694.dir\\Debug\\\\" /Fd"cmTC_21694.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\OpenMPCheckVersion.cpp"
+          OpenMPCheckVersion.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\Debug\\cmTC_21694.exe" /INCREMENTAL /ILK:"cmTC_21694.dir\\Debug\\cmTC_21694.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-u8ayal/Debug/cmTC_21694.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-u8ayal/Debug/cmTC_21694.lib" /MACHINE:X64  /machine:x64 cmTC_21694.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_21694.vcxproj -> C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\Debug\\cmTC_21694.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_21694.dir\\Debug\\cmTC_21694.tlog\\unsuccessfulbuild".
+          Touching "cmTC_21694.dir\\Debug\\cmTC_21694.tlog\\cmTC_21694.lastbuildstate".
+        Done Building Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u8ayal\\cmTC_21694.vcxproj" (default targets).
+        
+        Build succeeded.
+            0 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.41
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:14 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11.cps"
+        kind: "cps"
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/go_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/go_engine"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/FindPythonInterp.cmake:144 (find_program)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/FindPythonLibsNew.cmake:114 (find_package)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Tools.cmake:44 (find_package)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:237 (include)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:14 (find_package)"
+    mode: "program"
+    variable: "PYTHON_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.8"
+      - "python3"
+    candidate_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/"
+      - "C:/ProgramData/mingw64/mingw64/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/"
+      - "C:/Program Files/PostgreSQL/18/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Program Files/Google/Chrome/Application/"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/"
+      - "C:/Users/ayman/AppData/Local/PowerToys/"
+      - "C:/Users/ayman/AppData/Roaming/npm/"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/ayman/AppData/Local/Python/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/go_engine/bin/"
+      - "C:/Program Files (x86)/go_engine/sbin/"
+      - "C:/Program Files (x86)/go_engine/"
+    searched_directories:
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3.8.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3.8.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3.8"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3.8.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3.8.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3.8"
+      - "C:/Windows/System32/python3.8.com"
+      - "C:/Windows/System32/python3.8.exe"
+      - "C:/Windows/System32/python3.8"
+      - "C:/Windows/python3.8.com"
+      - "C:/Windows/python3.8.exe"
+      - "C:/Windows/python3.8"
+      - "C:/Windows/System32/wbem/python3.8.com"
+      - "C:/Windows/System32/wbem/python3.8.exe"
+      - "C:/Windows/System32/wbem/python3.8"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.8"
+      - "C:/Windows/System32/OpenSSH/python3.8.com"
+      - "C:/Windows/System32/OpenSSH/python3.8.exe"
+      - "C:/Windows/System32/OpenSSH/python3.8"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3.8.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3.8.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3.8"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3.8.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3.8.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3.8"
+      - "C:/Program Files/Git/cmd/python3.8.com"
+      - "C:/Program Files/Git/cmd/python3.8.exe"
+      - "C:/Program Files/Git/cmd/python3.8"
+      - "C:/ProgramData/chocolatey/bin/python3.8.com"
+      - "C:/ProgramData/chocolatey/bin/python3.8.exe"
+      - "C:/ProgramData/chocolatey/bin/python3.8"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3.8.com"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3.8.exe"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3.8"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3.8.com"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3.8.exe"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3.8"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3.8.com"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3.8.exe"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3.8"
+      - "C:/Program Files/PostgreSQL/18/bin/python3.8.com"
+      - "C:/Program Files/PostgreSQL/18/bin/python3.8.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/python3.8"
+      - "C:/Program Files/nodejs/python3.8.com"
+      - "C:/Program Files/nodejs/python3.8.exe"
+      - "C:/Program Files/nodejs/python3.8"
+      - "C:/Program Files/dotnet/python3.8.com"
+      - "C:/Program Files/dotnet/python3.8.exe"
+      - "C:/Program Files/dotnet/python3.8"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3.8.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3.8.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3.8"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3.8.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3.8.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3.8"
+      - "C:/Program Files/Google/Chrome/Application/python3.8.com"
+      - "C:/Program Files/Google/Chrome/Application/python3.8.exe"
+      - "C:/Program Files/Google/Chrome/Application/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3.8"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3.8.com"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3.8.exe"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3.8"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Python/bin/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Python/bin/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Python/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Antigravity/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/bin/python3.8"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/python3.8.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/python3.8.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/python3.8"
+      - "C:/Program Files/CMake/bin/python3.8.com"
+      - "C:/Program Files/CMake/bin/python3.8.exe"
+      - "C:/Program Files/CMake/bin/python3.8"
+      - "C:/Program Files/bin/python3.8.com"
+      - "C:/Program Files/bin/python3.8.exe"
+      - "C:/Program Files/bin/python3.8"
+      - "C:/Program Files/sbin/python3.8.com"
+      - "C:/Program Files/sbin/python3.8.exe"
+      - "C:/Program Files/sbin/python3.8"
+      - "C:/Program Files/python3.8.com"
+      - "C:/Program Files/python3.8.exe"
+      - "C:/Program Files/python3.8"
+      - "C:/Program Files (x86)/bin/python3.8.com"
+      - "C:/Program Files (x86)/bin/python3.8.exe"
+      - "C:/Program Files (x86)/bin/python3.8"
+      - "C:/Program Files (x86)/sbin/python3.8.com"
+      - "C:/Program Files (x86)/sbin/python3.8.exe"
+      - "C:/Program Files (x86)/sbin/python3.8"
+      - "C:/Program Files (x86)/python3.8.com"
+      - "C:/Program Files (x86)/python3.8.exe"
+      - "C:/Program Files (x86)/python3.8"
+      - "C:/Program Files/CMake/bin/python3.8.com"
+      - "C:/Program Files/CMake/bin/python3.8.exe"
+      - "C:/Program Files/CMake/bin/python3.8"
+      - "C:/Program Files/CMake/sbin/python3.8.com"
+      - "C:/Program Files/CMake/sbin/python3.8.exe"
+      - "C:/Program Files/CMake/sbin/python3.8"
+      - "C:/Program Files/CMake/python3.8.com"
+      - "C:/Program Files/CMake/python3.8.exe"
+      - "C:/Program Files/CMake/python3.8"
+      - "C:/Program Files (x86)/go_engine/bin/python3.8.com"
+      - "C:/Program Files (x86)/go_engine/bin/python3.8.exe"
+      - "C:/Program Files (x86)/go_engine/bin/python3.8"
+      - "C:/Program Files (x86)/go_engine/sbin/python3.8.com"
+      - "C:/Program Files (x86)/go_engine/sbin/python3.8.exe"
+      - "C:/Program Files (x86)/go_engine/sbin/python3.8"
+      - "C:/Program Files (x86)/go_engine/python3.8.com"
+      - "C:/Program Files (x86)/go_engine/python3.8.exe"
+      - "C:/Program Files (x86)/go_engine/python3.8"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/python3"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/python3"
+      - "C:/Windows/System32/python3.com"
+      - "C:/Windows/System32/python3.exe"
+      - "C:/Windows/System32/python3"
+      - "C:/Windows/python3.com"
+      - "C:/Windows/python3.exe"
+      - "C:/Windows/python3"
+      - "C:/Windows/System32/wbem/python3.com"
+      - "C:/Windows/System32/wbem/python3.exe"
+      - "C:/Windows/System32/wbem/python3"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/python3"
+      - "C:/Windows/System32/OpenSSH/python3.com"
+      - "C:/Windows/System32/OpenSSH/python3.exe"
+      - "C:/Windows/System32/OpenSSH/python3"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/python3"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/python3"
+      - "C:/Program Files/Git/cmd/python3.com"
+      - "C:/Program Files/Git/cmd/python3.exe"
+      - "C:/Program Files/Git/cmd/python3"
+      - "C:/ProgramData/chocolatey/bin/python3.com"
+      - "C:/ProgramData/chocolatey/bin/python3.exe"
+      - "C:/ProgramData/chocolatey/bin/python3"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3.com"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3.exe"
+      - "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/bin/python3"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3.com"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/python3"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3.com"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3.exe"
+      - "C:/Program Files/OpenJDK/jdk-21/bin/python3"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3.com"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3.exe"
+      - "C:/ProgramData/mingw64/mingw64/bin/python3"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/python3"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/python3"
+      - "C:/Program Files/PostgreSQL/18/bin/python3.com"
+      - "C:/Program Files/PostgreSQL/18/bin/python3.exe"
+      - "C:/Program Files/PostgreSQL/18/bin/python3"
+      - "C:/Program Files/nodejs/python3.com"
+      - "C:/Program Files/nodejs/python3.exe"
+      - "C:/Program Files/nodejs/python3"
+      - "C:/Program Files/dotnet/python3.com"
+      - "C:/Program Files/dotnet/python3.exe"
+      - "C:/Program Files/dotnet/python3"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/python3"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3.com"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3.exe"
+      - "C:/Program Files/MySQL/MySQL Shell 8.0/bin/python3"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/python3"
+      - "C:/Program Files/Google/Chrome/Application/python3.com"
+      - "C:/Program Files/Google/Chrome/Application/python3.exe"
+      - "C:/Program Files/Google/Chrome/Application/python3"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Windsurf/bin/python3"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3.com"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3.exe"
+      - "C:/Users/ayman/AppData/Local/PowerToys/python3"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3.com"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3.exe"
+      - "C:/Users/ayman/AppData/Roaming/npm/python3"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3.com"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3.exe"
+      - "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/python3"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3.com"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3.exe"
+      - "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/bin/python3"
+      - "C:/Users/ayman/AppData/Local/Python/bin/python3.com"
+    found: "C:/Users/ayman/AppData/Local/Python/bin/python3.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/go_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/go_engine"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:332 (check_cxx_compiler_flag)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:404 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:438 (_pybind11_generate_lto)"
+      - "C:/Users/ayman/AppData/Local/Python/pythoncore-3.12-64/Lib/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:14 (find_package)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-i8fhqo"
+      binary: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-i8fhqo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: ""
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-i8fhqo'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_16e4b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        MSBuild version 18.5.4+cb4e32d21 for .NET Framework
+        Build started 4/30/2026 1:53:51 PM.
+        
+        Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\cmTC_16e4b.vcxproj" on node 1 (default targets).
+        PrepareForBuild:
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Creating directory "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\Debug\\".
+          Creating directory "cmTC_16e4b.dir\\Debug\\cmTC_16e4b.tlog\\".
+        InitializeBuildStatus:
+          Creating "cmTC_16e4b.dir\\Debug\\cmTC_16e4b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_16e4b.dir\\Debug\\cmTC_16e4b.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_16e4b.dir\\Debug\\\\" /Fd"cmTC_16e4b.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.50.35729 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_16e4b.dir\\Debug\\\\" /Fd"cmTC_16e4b.dir\\Debug\\vc145.pdb" /external:W3 /TP /errorReport:queue "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.50.35717\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\Debug\\cmTC_16e4b.exe" /INCREMENTAL /ILK:"cmTC_16e4b.dir\\Debug\\cmTC_16e4b.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-i8fhqo/Debug/cmTC_16e4b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/CMakeScratch/TryCompile-i8fhqo/Debug/cmTC_16e4b.lib" /MACHINE:X64  /machine:x64 cmTC_16e4b.dir\\Debug\\src.obj
+        LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\cmTC_16e4b.vcxproj]
+          Generating code
+          Finished generating code
+          cmTC_16e4b.vcxproj -> C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\Debug\\cmTC_16e4b.exe
+        FinalizeBuildStatus:
+          Deleting file "cmTC_16e4b.dir\\Debug\\cmTC_16e4b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_16e4b.dir\\Debug\\cmTC_16e4b.tlog\\cmTC_16e4b.lastbuildstate".
+        Done Building Project "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\cmTC_16e4b.vcxproj" (default targets).
+        
+        Build succeeded.
+        
+        "C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\cmTC_16e4b.vcxproj" (default target) (1) ->
+        (Link target) -> 
+          LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification [C:\\Users\\ayman\\Downloads\\go_ship\\cpp_engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-i8fhqo\\cmTC_16e4b.vcxproj]
+        
+            1 Warning(s)
+            0 Error(s)
+        
+        Time Elapsed 00:00:00.38
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:14 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11.cps"
+        kind: "cps"
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/PASTE_PYBIND11_PATH/pybind11.cps"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/PASTE_PYBIND11_PATH/pybind11Config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/PASTE_PYBIND11_PATH/pybind11-config.cmake"
+        mode: "none?"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/Downloads/go_ship/cpp_engine/build/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/wbem/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/WindowsPowerShell/v1.0/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Windows/System32/OpenSSH/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Git/cmd/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/chocolatey/lib/maven/apache-maven-3.9.11/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WindowsApps/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/OpenJDK/jdk-21/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/ProgramData/mingw64/mingw64/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Python313/Scripts/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/PostgreSQL/18/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/nodejs/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/dotnet/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Docker/Docker/resources/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/MySQL/MySQL Shell 8.0/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Python/Launcher/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/Google/Chrome/Application/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Windsurf/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Roaming/npm/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/JetBrains/Toolbox/scripts/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Microsoft VS Code/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Python/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/Antigravity/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Programs/cursor/resources/app/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/ayman/AppData/Local/Microsoft/WinGet/Links/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/CMake/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Program Files (x86)/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Program Files\\Google\\Chrome\\Application"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\ProgramData\\chocolatey\\lib\\maven\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\ProgramData\\mingw64\\mingw64\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Python\\Python313\\Scripts"
+        - "C:\\Program Files\\PostgreSQL\\18\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Program Files\\OpenJDK\\jdk-21\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\PowerToys\\"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Windsurf\\bin"
+        - "C:\\Users\\ayman\\AppData\\Roaming\\npm"
+        - "C:\\Users\\ayman\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\Antigravity\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin"
+        - "C:\\Users\\ayman\\AppData\\Local\\Microsoft\\WinGet\\Links"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/go_engine"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/go_engine"
+...

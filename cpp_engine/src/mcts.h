@@ -18,6 +18,7 @@ struct MCTSNode {
     float    q          = 0.0f;
     float    p          = 0.0f;
     int      n          = 0;
+    int      vl         = 0;   // virtual loss counter
     int      parent     = -1;
     int      move_idx   = -1;
     bool     expanded   = false;
@@ -68,6 +69,10 @@ public:
     int  select();
     void expand(int node_idx, const float* policy81, float value);
 
+    // Batched leaf collection with virtual losses
+    int  gather_leaves(int max_n, int8_t* boards_out, int8_t* players_out);
+    void scatter_results(int n, const float* policies, const float* values);
+
     int  best_move()   const;
     void visit_probs(float* out81) const;
     const MCTSNode& node(int i) const { return nodes[i]; }
@@ -75,6 +80,7 @@ public:
 
 private:
     std::vector<MCTSNode> nodes;
+    std::vector<int>      pending_leaves_;
     int n_used    = 0;
     int max_nodes = 0;
 
@@ -129,8 +135,13 @@ public:
                const std::vector<int8_t>& players,
                const std::vector<uint64_t>& prev_hashes);
 
+    // Original single-leaf interface (G leaves, one per game)
     void get_leaves(int8_t* boards_out, int8_t* players_out);
     void apply_results(const float* policy, const float* value);
+
+    // Batched interface for game 0: collect max_n leaves with virtual losses
+    void gather_leaves_batch(int max_n, int8_t* boards_out, int8_t* players_out);
+    void scatter_results_batch(int n, const float* policies, const float* values);
 
     void get_best_moves(int* out)    const;
     void get_visit_probs(float* out) const;
